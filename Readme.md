@@ -48,3 +48,5 @@ rbind - Take a sequence of vector, matrix or data-frame arguments and combine by
 melt - takes data in wide format and stacks a set of columns into a single column of data.
 
 dcast - casts molten data frame into an array or data frame
+
+grepl - for pattern matching of mean and std (standard deviation)
