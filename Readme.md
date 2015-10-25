@@ -15,9 +15,9 @@ You should create one R script called run_analysis.R that does the following.
 1.  Download the source archive and unzip it into your working folder
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-2.  Place '''run_analysis.R''' file in your working folder.
+2.  Place run_analysis.R file in your working folder.
 
-3.  Open '''run_analysis.R''' file in RStudio and step through it. You will see it creating
+3.  Open run_analysis.R file in RStudio and step through it. You will see it creating
     variables and functions in the right hand window.
     
     Note:  This file requires the packages reshape2 and data.table so if you see an error   
