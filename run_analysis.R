@@ -36,10 +36,10 @@ processXYTrainData <- function(extract_features,activity_labels,features) {
   
   names(X_train_data) = features
   
-  # Extract only the measurements on the mean and standard deviation for each measurement.
+
   X_train_data <- X_train_data[,extract_features]
   
-  # Load activity data
+
   y_train_data[,2] <- activity_labels[y_train_data[,1]]
   names(y_train_data) <- c("ActivityID", "ActivityLabel")
   names(strain) <- "subject"
