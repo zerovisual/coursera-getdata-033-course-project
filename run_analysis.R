@@ -60,9 +60,9 @@ train_data <- processXYTrainData(extract_features,activity_labels,features)
 # Merge test and train data from the functions
 data <- rbind(test_data, train_data)
 
-id_labels   <- c("subject", "ActivityID", "ActivityLabel")
-data_labels <- setdiff(colnames(data), id_labels)
-melt_data   <- melt(data, id = id_labels, measure.vars = data_labels)
+ids   <- c("subject", "ActivityID", "ActivityLabel")
+labels <- setdiff(colnames(data), ids)
+melt_data   <- melt(data, id = ids, measure.vars = labels)
 
 tidy_data   <- dcast(melt_data, subject + ActivityLabel ~ variable, mean)
 
